@@ -40,7 +40,7 @@ Returns a `ManagedString` of the battery voltage to be used on the display or el
 
 Returns a `ManagedString` relating to thresholds set in **batteryRoversa.h**. These can be used to help quickly define ranges and thresholds for the battery.
 
-- `BAT_LOW` is returned if the battery voltage is below BAT_LOW or 3.4 V. This signals the battery needs to be charged and is below normal operating voltage.
+- `BAT_LOW` is returned if the battery voltage is below BAT_LOW or 3.4 V. This signals the battery needs to be charged and is below normal operating voltage. The servo motor driver needs to run at 3.4 V to 7 V.
 
 - `BAT_CHG` is returned if the battery is is greater or equal to BAT_LOW and below BAT_OK or between 3.4 V and 3.6 V.
 
