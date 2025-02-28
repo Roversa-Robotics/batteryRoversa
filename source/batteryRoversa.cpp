@@ -40,7 +40,7 @@ ManagedString batteryCheck() {
     ManagedString BC ="BAT_CHG";
     return BC;
   } 
-  else if (battery > BAT_OK && battery <= BAT_MAX) {
+  else if (battery >= BAT_OK && battery <= BAT_MAX) {
     ManagedString BO ="BAT_OK!";
     return BO;
   }
