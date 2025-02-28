@@ -46,4 +46,4 @@ Returns a `ManagedString` relating to thresholds set in **batteryRoversa.h**. Th
 
 - `BAT_OK!` is returned if the battery is greater or equal to BAT_OK and below or equal to BAT_MAX or in the normal operating voltage range, 3.6 V and 4.7 V.
 
-- `BAT_BAD` is returned if the battery is outside of these ranges. If the micro:bit is plugged into the USB directly, it will read ~5V because the `MicroBit.io.P3` is reading high, causing this error
+- `BAT_BAD` is returned if the battery is outside of these ranges. If the micro:bit is plugged into the USB directly, it will read ~5V because the `MicroBit.io.P3` is reading high, causing this error.
