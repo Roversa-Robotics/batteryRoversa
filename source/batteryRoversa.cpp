@@ -1,8 +1,6 @@
 #include "MicroBit.h"
 #include "batteryRoversa.h"
 
-using namespace std;
-
 extern MicroBit uBit;
 
 int roundFloat(float value) {
@@ -33,7 +31,7 @@ ManagedString batteryVoltageString() {
 ManagedString batteryCheck() {
   float battery = batteryVoltage();
   if (battery < BAT_LOW) {
-    ManagedString BL="BAT_LOW";
+    ManagedString BL = "BAT_LOW";
     return BL;
   }
   else if (battery >= BAT_LOW && battery < BAT_OK) {
@@ -45,7 +43,7 @@ ManagedString batteryCheck() {
     return BO;
   }
   else {
-    ManagedString BB="BAT_BAD";
+    ManagedString BB = "BAT_BAD";
     return BB;
   }
 }
