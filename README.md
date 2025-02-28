@@ -1,4 +1,4 @@
-# batteryStatus
+# batteryRoversa
 Check the battery on Roversa!
 
 Simple library for obtaining the battery voltage of Roversa using [codal-microbit-v2](https://github.com/lancaster-university/microbit-v2-samples). This reads the analog value on PIN3 which is the voltage at a voltage divider of two 100k resistors from the battery source, a 4.7V 400mAh LiPo battery. You may get inaccurate readings if the micro:bit USB port is connected while in the robot. These values will change whether you are charging and whether or not the power button is on/off. The readings are meant to be used when the robot is not connected to another device and is operating directly off of the battery.
